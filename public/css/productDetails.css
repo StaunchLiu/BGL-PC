@@ -1,0 +1,99 @@
+#productDetails{
+    width: 100%;
+    margin-top: 168px;
+    background: #f0ede8;
+    position: relative;
+}
+/* 左部图片 */
+#productDetails>.productDetailsCon{
+    width: 50%;
+}
+#productDetails>.productDetailsCon>.iconList{
+    margin: 80px 0 150px 20px;
+}
+#productDetails>.productDetailsCon>.iconList>img{
+    margin-left: 24px;
+}
+#productDetails>.productDetailsCon>.iconList>ul{
+    width: 6.5rem;
+}
+#productDetails>.productDetailsCon>.iconList>ul>li{
+    width: 6.5rem;
+}
+#productDetails>.productDetailsCon>.iconList>ul>li>img{
+    opacity: .5;
+}
+.iconListActive{
+    border: .1px solid #906d60;
+}
+#productDetails>.productDetailsCon>.preview{
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    text-align: center;
+}
+/* 右方内容 */
+#productDetails>.productDetailsText{
+    width: 45%;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+#productDetails>.productDetailsText>.title{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+}
+#productDetails>.productDetailsText>.title>.price{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+#productDetails>.productDetailsText>.const{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+#productDetails>.productDetailsText>.const>button{
+    width: 40px;
+    height: 30px;
+    border: .5px solid #000000;
+    background: transparent;
+    outline: none;
+    transition: .5s;
+}
+#productDetails>.productDetailsText>.const>button:hover{
+    background: #000000;
+    color: #ffffff;
+}
+#productDetails>.productDetailsText>.const>input{
+    width: 50px;
+    padding-top: 7.5px;
+    padding-bottom: 7px;
+    margin-left: -3px;
+    margin-right: -3px;
+    border: .5px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    transition: .5s;
+}
+#productDetails>.productDetailsText>.cart{
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+#productDetails>.productDetailsText>.cart>button{
+    width: 50%;
+    height: 50px;
+    border: 0;
+    background: #000000;
+    color: #ffffff;
+    outline: none;
+}

@@ -1,0 +1,20 @@
+(function(){
+    //下拉选
+    $(".sex").click(function(){
+        if($(this).children().children("span").css("top")=="10px"){
+            $(this).children().children("span").css({"top":"12px","transform":"rotate(0deg)"}).parent().next().removeClass("hide");
+            $(this).children().children("p").css({"font-size":"1.2rem","border-bottom":0});
+        }
+        else{
+            $(this).children().children("span").css({"top":"10px","transform":"rotate(180deg)"}).parent().next().addClass("hide");
+            $(this).children().children("p").css("font-size","1.3rem");
+            $(this).children().children("p").css({"font-size":"1.3rem","border-bottom":".5px solid #ae9477"});
+        }
+    })
+    $(".sexSelect>li").each(function(){
+        $(this).click(function(){
+            $(this).parent().prev().children("p").html($(this).html());
+        })
+    })
+    //条例复选框
+})();

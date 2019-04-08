@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'FuturaBook','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body{
+    height: 100%;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.hide{
+    display: none !important;
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+footer{
+    margin-top: 200px;
+}
+button{
+    outline: none;
+}
+input{
+    outline: none;
+}

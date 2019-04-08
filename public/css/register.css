@@ -1,0 +1,245 @@
+/* 注册标题 */
+.register{
+    width: 100%;
+    margin-top: 163px;
+}
+.register>.registerTitle{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+.register>.registerTitle>h1{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    border-bottom: 1px solid #cac9c5;
+}
+.register>.registerTitle>img{
+    width: 3.4rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -17px; 
+    background: #ffffff;
+}
+/* 注册区域 */
+.register>.registerArea{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background: #f0ede8;
+}
+.register>.registerArea>.step{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+.register>.registerArea>.step>h3{
+    width: 28rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.6rem;
+    cursor: default;
+}
+.register>.registerArea>.step>h3{
+    font-weight: 700;
+    border-bottom: .5px solid #ae9477;
+}
+.register>.registerArea>.registerContainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.register>.registerArea>.registerContainer>.registerLeft{
+    float:left;
+    margin-bottom: 50px;
+    margin-left: 92px;
+}
+.register>.registerArea>.registerContainer>.registerLeft>.registerScan{
+    padding-right: 100px;
+    text-align: center;
+    border-right: .5px solid #cac9c5;
+}
+.register>.registerArea>.registerContainer>.registerLeft>.registerScan>img:first-child{
+    float: left;
+    margin-left: 10px;
+}
+.register>.registerArea>.registerContainer>.registerLeft>.registerScan>p:nth-child(2){
+    display: inline-block;
+    margin-left: -10px;
+    font-size: 1.3rem;
+}
+.register>.registerArea>.registerContainer>.registerLeft>.registerScan>img:nth-child(4){
+    width: 12rem;
+    margin-top: 10px;
+}
+.register>.registerArea>.registerContainer>.registerLeft>.registerScan>p:last-child{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.register>.registerArea>.registerContainer>.registerRight{
+    width: 30%;
+    padding-left:60px; 
+}
+/*注册框*/
+.register>.registerArea>.registerContainer>.registerRight>.userId{
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    font-weight: 300;
+}
+.register>.registerArea>.registerContainer>.registerRight>.userId>input{
+    width: 25rem;
+    height: 2.5rem;
+    padding: 5px 0 5px 10px;
+    margin-top: 3px;
+    border:0;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    outline: none;
+}
+/* 错误提示 */
+.register>.registerArea>.registerContainer>.registerRight>.uidErrMsg{
+    color: #f00;
+    margin: 3px 0 20px 0;
+    padding-left: 5px;
+    opacity: 0;
+}
+.register>.registerArea>.registerContainer>.registerRight>.upwdErrMsg{
+    color: #f00;
+    margin-top: 3px;
+    padding-left: 5px;
+    opacity: 0;
+}
+/* 注册框 */
+.register>.registerArea>.registerContainer>.registerRight>input{
+    width: 26rem;
+    height: 3rem;
+    margin-top: 30px;
+    border: 0;
+    color: #dddddd;
+    background: #000000;
+    outline: none;
+}
+/* 完善资料 */
+.register>.registerArea>form{
+    width: 30rem;
+    margin: auto;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    position: relative;
+}
+.register>.registerArea>form>input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 9.4px 0;
+    padding-left: 15px;
+    outline: none;
+    border: 0;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+}
+.register>.registerArea>form>input:nth-child(2){
+    margin-bottom: 20px;
+}
+.register>.registerArea>form>.sex{
+    width: 19.9%;
+    float: right;
+    margin-top: 10px;
+    position: absolute;
+    top: 18px;
+    right: -15px;
+    cursor: pointer;
+}
+.register>.registerArea>form>.sex>.sexChange>p{
+    padding: 9.5px;
+    padding-left: 8px;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    background: #ffffff;
+    border: .5px solid #ae9477;
+}
+.register>.registerArea>form>.sex>.sexChange>span{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 6px solid #ffffff;
+    border-top: 8px solid #000000;
+    transition: all .1s;
+    transform: rotate(180deg);
+    transition: .1s;
+}
+.register>.registerArea>form>.sex>ul{
+    padding: 5px;
+    padding-top: 0;
+    border: .5px solid #ae9477;
+    border-top: 0;
+    background: #ffffff;
+}
+.register>.registerArea>form>.sex>ul>li{
+    padding: 5px;
+    border-top: .5px solid #ae9477;
+    color: #333333;
+    opacity: .6;
+}
+.register>.registerArea>form>.sexCbx{
+    position: relative;
+}
+.register>.registerArea>form>.sexCbx>label{
+    position: absolute;
+}
+.register>.registerArea>form>.sexCbx>label:nth-child(1)>input{
+    position: absolute;
+    top: 2px;
+}
+.register>.registerArea>form>.sexCbx>label>span{
+    width: 28rem;
+    float: right;
+}
+.register>.registerArea>form>.sexCbx>label:first-child>span{
+    display: block;
+    padding-left: 20px;
+}
+.register>.registerArea>form>.sexCbx>label>span>a{
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.register>.registerArea>form>.sexCbx>label>span>a:hover{
+    color: #303030;
+}
+.register>.registerArea>form>.sexCbx>label:nth-child(4),.register>.registerArea>form>.sexCbx>label:nth-child(6){
+    margin-top: 25px;
+    padding-left: 20px;
+    opacity: .3;
+}
+.register>.registerArea>form>.sexCbx>label:nth-child(6)>span{
+    display: block;
+    width: 26rem;
+    padding-left: 5px;
+}
+.register>.registerArea>form>.upwdErrmsg{
+    color: #ae9477;
+}
+.register>.registerArea>form>input:last-child{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    background: #000000;
+    color: #ffffff;
+}

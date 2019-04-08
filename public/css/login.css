@@ -1,0 +1,150 @@
+/* 登录标题 */
+.login{
+    width: 100%;
+    margin-top: 163px;
+}
+.login>.loginTitle{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+.login>.loginTitle>h1{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    border-bottom: 1px solid #cac9c5;
+}
+.login>.loginTitle>img{
+    width: 3.4rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -17px; 
+    background: #ffffff;
+}
+/* 登录区域 */
+.login>.loginArea{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background: #f0ede8;
+}
+.login>.loginArea>h3{
+    padding:30px 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+.login>.loginArea>.loginContainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.login>.loginArea>.loginContainer>.loginLeft{
+    float:left;
+    margin-bottom: 50px;
+    margin-left: 172px;
+}
+.login>.loginArea>.loginContainer>.loginLeft>.loginScan{
+    padding-right: 100px;
+    text-align: center;
+    border-right: 1px solid #cac9c5;
+}
+.login>.loginArea>.loginContainer>.loginLeft>.loginScan>img:first-child{
+    float: left;
+    margin-left: 10px;
+}
+.login>.loginArea>.loginContainer>.loginLeft>.loginScan>p:nth-child(2){
+    display: inline-block;
+    margin-left: -10px;
+    font-size: 1.3rem;
+}
+.login>.loginArea>.loginContainer>.loginLeft>.loginScan>img:nth-child(4){
+    width: 12rem;
+    margin-top: 10px;
+}
+.login>.loginArea>.loginContainer>.loginLeft>.loginScan>p:last-child{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+/*登录框*/
+.login>.loginArea>.loginContainer>.loginRight{
+    width: 40%;
+    padding-left:60px; 
+}
+.login>.loginArea>.loginContainer>.loginRight>.userId,.login>.loginArea>.loginContainer>.loginRight>.userPassword{
+    font-size: 1.3rem;
+}
+.login>.loginArea>.loginContainer>.loginRight>.userId>input,.login>.loginArea>.loginContainer>.loginRight>.userPassword>input{
+    width: 22rem;
+    height: 2.5rem;
+    padding: 5px 0 5px 10px;
+    margin-top: 3px;
+    border:0;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    outline: none;
+}
+.login>.loginArea>.loginContainer>.loginRight>.userId>input{
+    margin-bottom: 15px;
+}
+/* 错误提示 */
+.login>.loginArea>.loginContainer>.loginRight>.errMsg{
+    color: #f00;
+    margin-top: 3px;
+    padding-left: 5px;
+    opacity: 0;
+}
+/* 记住密码 */
+.login>.loginArea>.loginContainer>.loginRight>.checkbox{
+    margin-top: 15px;
+    position: relative;
+}
+.login>.loginArea>.loginContainer>.loginRight>.checkbox>label>input{
+    position: absolute;
+    top: 2px;
+    outline: none;
+}
+.login>.loginArea>.loginContainer>.loginRight>.checkbox>label>span{
+    position: absolute;
+    left: 15px;
+}
+.login>.loginArea>.loginContainer>.loginRight>.checkbox>a{
+    float: left;
+    margin-left: 65%;
+    color: #000000;
+}
+.login>.loginArea>.loginContainer>.loginRight>.checkbox>a:hover{
+    text-decoration: underline;
+}
+/* 登录 */
+.login>.loginArea>.loginContainer>.loginRight>input{
+    width: 22rem;
+    height: 3rem;
+    float: left;
+    margin: 20px 0 10px 0;
+    color: #dddddd;
+    background: #000000;
+    border: 0;
+    outline: none;
+}
+/* 注册 */
+.login>.loginArea>.loginContainer>.loginRight>p{
+    float: left;
+}
+.login>.loginArea>.loginContainer>.loginRight>a{
+    color: #000000;
+}
+.login>.loginArea>.loginContainer>.loginRight>a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,140 @@
+/* Top */
+.productTop{
+    width: 100%;
+    height: 50%;
+    margin-top: 155px;
+    position: relative;
+}
+/* 面包屑 */
+.productTop>.productCrumb{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #a3a3a3;
+}
+.productTop>.productCrumb>a{
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #a3a3a3;
+}
+.productTop>.productCrumb>a:first-child:hover{
+    text-decoration: underline;
+}
+/* Top标题 */
+.productTop>.productTitle{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+.productTop>.productTitle>h1{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+}
+/* Top简介 */
+.productDescription{
+    width: 100%;
+    text-align: center;
+    background: #f0ede8;
+}
+.productDescription>p{
+    max-width: 67rem;
+    margin: auto;
+    padding: 50px;
+    line-height: 2rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+/* Top背景 */
+.productTop>.productTopBg{
+    width: 100%;
+}
+.productTop>.productTopBg>img{
+    width: 100%;
+    height: 100%;
+}
+/* 商品列表 */
+.product_title1{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+.productList{
+    width: 100rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productList>.productItem{
+    width: 19%;
+    padding: 50px 20px;
+    margin-top: 25px;
+    float: left;
+    margin-left: 1.5%;
+    background: #f0ede8;
+    transition: .5s;
+}
+.productList>.productItem>h1{
+    position: relative;
+    top: 70px;
+    opacity: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: underline;
+    letter-spacing: .5rem;
+    transition: .5s;
+}
+.productList>.productItem>h3{
+    position: relative;
+    top: 90px;
+    opacity: 0;
+    text-align: center; 
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .9);
+    letter-spacing: .5rem;
+    transition: .5s;
+
+}
+.productList>.productItem>img{
+    width: 100%;
+    transition: .2s;
+}
+.productList>.productItem>div{
+    width: 121%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    position: relative;
+    left: -20px;
+    bottom: -50px;
+    letter-spacing: .3rem;
+    color: #ffffff;
+    background: #000000;
+    opacity: 0;
+    transition: .5s;
+}
+.productList>.productItem:hover{
+    background: rgba(0, 0, 0, .8);
+}
+.productList>.productItem:hover>h1{
+    opacity: 1;
+}
+.productList>.productItem:hover>h3{
+    opacity: 1;
+}
+.productList>.productItem:hover>img{
+    opacity: 0;
+}
+.productList>.productItem:hover>div{
+    opacity: 1;
+}

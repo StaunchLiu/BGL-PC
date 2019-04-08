@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shrotcut icon" href="imgs/logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>客户登录</title>
+</head>
+<body>
+    <header></header>
+    <table></table>
+    <div class="login">
+        <div class="loginTitle">
+            <h1>
+                欢迎来到宝格丽的世界
+            </h1>
+            <img src="imgs/login/star.png">
+        </div>
+        <div class="loginArea">
+            <h3>登录账户</h3>
+            <div class="loginContainer">
+                <div class="loginLeft">
+                    <div class="loginScan">
+                        <img src="imgs/header/headerTop/scan.png" alt="scan">
+                        <p>微信二维码</p>
+                        <div class="clear"></div>
+                        <img src="imgs/header/headerTop/QR-Code.png" alt="QR-Code">
+                        <table></table>
+                        <p>即刻关注<br />宝格丽中国官网</p>
+                    </div>
+                </div>
+                <div class="loginRight">
+                    <div class="userId">
+                        用户名 <br>
+                        <input type="text" name="phone" placeholder="请输入11位手机号" autocomplete="off">
+                    </div>
+                    <div class="userPassword">
+                        密码 <br>
+                        <input type="password" name="upwd" placeholder="请输入您的密码">
+                    </div>
+                    <div class="errMsg">用户名或密码格式错误</div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>记住我</span>
+                        </label>
+                        <a href="#">忘记密码</a>
+                        <div class="clear"></div>
+                    </div>
+                    <input type="button" value="登录" id="load">
+                    <div class="clear"></div>
+                    <p>还没有账号？</p>
+                    <a href="#">即可注册</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/hearder&footer.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

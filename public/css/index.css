@@ -1,0 +1,588 @@
+/* 第一屏轮播 */
+.bannerBox{
+    position: relative;
+    margin-top: 168px;
+}
+.bannerBox>.text-align{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.bannerBox>.text-align>h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.bannerBox>.text-align>h3:first-child{
+    color:#906d60;
+}
+/* 第二屏标题 */
+.product>.productBlock>a{
+    display: block;
+    margin: 20px 0;
+    font-size: 2.7rem;
+    color: #000000;
+    opacity: 0;
+    transition: 1s;
+}
+.product>.productBlock>a:hover{
+    text-decoration: underline;
+}
+.product>.productImg{
+    width: 100%;
+}
+
+@media screen and (min-width:1455px){
+    /* banner */
+    .bannerBox>.banner{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .bannerBox>.banner>video{
+        width:100%;
+        height:100%;
+    }
+    /* banner按钮 */
+    .bannerBox>.banner>.bannerBtn{
+        width: 25%;
+        height: 15rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 10rem;
+        left: 10rem;
+        background: rgba(0, 0, 0, .3);
+    }
+    .bannerBox>.banner>.bannerBtn>p{
+        position: absolute;
+        top:3rem;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: .5rem;
+        color: #ffffff;
+    }
+    .bannerBox>.banner>.bannerBtn>button{
+        width: 80%;
+        height: 30%;
+        position: absolute;
+        bottom: 3rem;
+        font-size: 1.4rem;
+        letter-spacing: .3rem;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #ffffff;
+        transition: all .5s;
+    }
+    .bannerBox>.banner>.bannerBtn>button:hover{
+        border-color: #000000;
+        background: #000000;
+    }
+    /* 商品 */
+    .product{
+        width: 100%;
+        overflow: hidden;
+    }
+    .product>.productBlock{
+        width: 75%;
+        margin:auto;
+        text-align: center;
+    }
+    .product>.productBlock>.productImg{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a{
+        display: block;
+    }
+    .product>.productBlock>.productImg>a>img{
+        box-shadow: 0px 0px 0px 0px #000000;
+        transition: all .5s;
+    }
+    @keyframes productHover{
+        30% {
+            transform: scale(0.95);
+        }
+        100% {
+            transform: scale(1.01);
+        }
+    }
+    .product>.productBlock>.productImg>a>img:hover{
+        animation:productHover 1s;
+        transform: scale(1.01);
+        box-shadow: -5px 5px 20px 5px #000000;
+    }
+    .product>.productBlock>.productImg>a:first-child{
+        width: 66%;
+        float: left;
+        margin-left: -1000px;
+        transition: all .5s;
+    }
+    .product>.productBlock>.productImg>a:first-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a:last-child{
+        width: 32%;
+        float: right;
+        margin-right: -600px;
+        transition: all 1s;
+    }
+    .product>.productBlock>.productImg>a:last-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a>p{
+        float: left;
+        margin: 10px 0;
+        font-size: 2rem;
+        color: #000000;
+    }
+    /* 锚点 */
+    .anchor{
+        width: 4%;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    #toTop{
+        width: 50%;
+        margin: auto;
+        padding: 2px 4px;
+        background: #ffffff;
+        border: 1px solid #dedede;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #toTop>img{
+        width: 100%;
+        cursor:pointer;
+    }
+    #words{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 2px 4px;
+        background: #000000;
+        border: 1px solid #333333;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #words>img{
+        width: 100%;
+        cursor:pointer;
+    }
+
+}
+@media screen and (min-width:900px) and (max-width:1454px){
+    /* banner */
+    .bannerBox>.banner{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .bannerBox>.banner>video{
+        width:100%;
+        height:100%;
+    }
+    /* banner按钮 */
+    .bannerBox>.banner>.bannerBtn{
+        width: 25%;
+        height: 15rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 10rem;
+        left: 10rem;
+        background: rgba(0, 0, 0, .3);
+    }
+    .bannerBox>.banner>.bannerBtn>p{
+        position: absolute;
+        top:3rem;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: .5rem;
+        color: #ffffff;
+    }
+    .bannerBox>.banner>.bannerBtn>button{
+        width: 80%;
+        height: 30%;
+        position: absolute;
+        bottom: 3rem;
+        font-size: 1.4rem;
+        letter-spacing: .3rem;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #ffffff;
+        transition: all .5s;
+    }
+    .bannerBox>.banner>.bannerBtn>button:hover{
+        border-color: #000000;
+        background: #000000;
+    }
+    /* 商品 */
+    .product{
+        width: 100%;
+    }
+    .product>.productBlock{
+        width: 70%;
+        margin:auto;
+        text-align: center;
+    }
+    .product>.productBlock>.productImg{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a{
+        display: block;
+    }
+    .product>.productBlock>.productImg>a>img{
+        box-shadow: 0px 0px 0px 0px #000000;
+        transition: all .5s;
+    }
+    @keyframes productHover{
+        30% {
+            transform: scale(0.95);
+        }
+        100% {
+            transform: scale(1.01);
+        }
+    }
+    .product>.productBlock>.productImg>a>img:hover{
+        animation:productHover 1s;
+        transform: scale(1.01);
+        box-shadow: -5px 5px 20px 5px #000000;
+    }
+    .product>.productBlock>.productImg>a:first-child{
+        width: 65%;
+        float: left;
+    }
+    .product>.productBlock>.productImg>a:first-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a:last-child{
+        width: 32%;
+        float: right;
+    }
+    .product>.productBlock>.productImg>a:last-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a{
+        color: #000000;
+    }
+    .product>.productBlock>.productImg>a>p{
+        float: left;
+        padding: 5px 0;
+        font-size: 2rem;
+    }
+    /* 锚点 */
+    .anchor{
+        width: 4%;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    #toTop{
+        width: 50%;
+        margin: auto;
+        padding: 2px 4px;
+        background: #ffffff;
+        border: 1px solid #dedede;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #toTop>img{
+        width: 100%;
+        cursor:pointer;
+    }
+    #words{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 2px 4px;
+        background: #000000;
+        border: 1px solid #333333;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #words>img{
+        width: 100%;
+        cursor:pointer;
+    }
+
+}
+@media screen and (max-width:899px){
+    .bannerBox{
+        position: relative;
+        margin-top: 81px;
+    }    
+    /* 轮播 */
+    .bannerBox>.banner{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .bannerBox>.banner>video{
+        width:100%;
+        height:100%;
+    }
+    /* 轮播按钮 */
+    .bannerBox>.banner>.bannerBtn{
+        width: 25%;
+        height: 15rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 10rem;
+        left: 10rem;
+        background: rgba(0, 0, 0, .3);
+        display: none;
+    }
+    .bannerBox>.banner>.bannerBtn>p{
+        position: absolute;
+        top:3rem;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: .5rem;
+        color: #ffffff;
+    }
+    .bannerBox>.banner>.bannerBtn>button{
+        width: 80%;
+        height: 30%;
+        position: absolute;
+        bottom: 3rem;
+        font-size: 1.4rem;
+        letter-spacing: .3rem;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #ffffff;
+        transition: all .5s;
+    }
+    .bannerBox>.banner>.bannerBtn>button:hover{
+        border-color: #000000;
+        background: #000000;
+    }
+    /* 商品 */
+    .product{
+        width: 100%;
+    }
+    .product>.productBlock{
+        width: 75%;
+        margin:auto;
+        text-align: center;
+    }
+    .product>.productBlock>.productImg{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a{
+        display: block;
+    }
+    .product>.productBlock>.productImg>a>img{
+        box-shadow: 0px 0px 0px 0px #000000;
+        transition: all .5s;
+    }
+    @keyframes productHover{
+        30% {
+            transform: scale(0.95);
+        }
+        100% {
+            transform: scale(1.01);
+        }
+    }
+    .product>.productBlock>.productImg>a>img:hover{
+        animation:productHover 1s;
+        transform: scale(1.01);
+        box-shadow: -5px 5px 20px 5px #000000;
+    }
+    .product>.productBlock>.productImg>a:first-child{
+        width: 66%;
+        float: left;
+    }
+    .product>.productBlock>.productImg>a:first-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a:last-child{
+        width: 32%;
+        float: right;
+    }
+    .product>.productBlock>.productImg>a:last-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a>p{
+        float: left;
+        margin: 10px 0;
+        font-size: 2rem;
+        color: #000000;
+    }
+    /* 锚点 */
+    .anchor{
+        width: 4%;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    #toTop{
+        width: 50%;
+        margin: auto;
+        padding: 2px 4px;
+        background: #ffffff;
+        border: 1px solid #dedede;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #toTop>img{
+        width: 100%;
+        cursor:pointer;
+    }
+    #words{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 2px 4px;
+        background: #000000;
+        border: 1px solid #333333;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #words>img{
+        width: 100%;
+        cursor:pointer;
+    }
+
+}
+@media screen and (max-width:768px){
+    /* 轮播 */
+    .bannerBox>.banner{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .bannerBox>.banner>video{
+        width:100%;
+        height:100%;
+    }
+    /* 轮播按钮 */
+    .bannerBox>.banner>.bannerBtn{
+        display: none;
+    }
+    .bannerBox>.banner>.bannerBtn>p{
+        position: absolute;
+        top:3rem;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: .5rem;
+        color: #ffffff;
+    }
+    .bannerBox>.banner>.bannerBtn>button{
+        width: 80%;
+        height: 30%;
+        position: absolute;
+        bottom: 3rem;
+        font-size: 1.4rem;
+        letter-spacing: .3rem;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #ffffff;
+        transition: all .5s;
+    }
+    .bannerBox>.banner>.bannerBtn>button:hover{
+        border-color: #000000;
+        background: #000000;
+    }
+    /* 商品 */
+    .product{
+        width: 100%;
+    }
+    .product>.productBlock{
+        width: 70%;
+        margin:auto;
+        text-align: center;
+    }
+    .product>.productBlock>.productImg{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a{
+        display: block;
+    }
+    .product>.productBlock>.productImg>a>img{
+        box-shadow: 0px 0px 0px 0px #000000;
+        transition: all .5s;
+    }
+    @keyframes productHover{
+        30% {
+            transform: scale(0.95);
+        }
+        100% {
+            transform: scale(1.01);
+        }
+    }
+    .product>.productBlock>.productImg>a>img:hover{
+        animation:productHover 1s;
+        transform: scale(1.01);
+        box-shadow: -5px 5px 20px 5px #000000;
+    }
+    .product>.productBlock>.productImg>a:first-child{
+        width: 65%;
+        float: left;
+    }
+    .product>.productBlock>.productImg>a:first-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a:last-child{
+        width: 32%;
+        float: right;
+    }
+    .product>.productBlock>.productImg>a:last-child>img{
+        width: 100%;
+    }
+    .product>.productBlock>.productImg>a{
+        color: #000000;
+    }
+    .product>.productBlock>.productImg>a>p{
+        float: left;
+        padding: 5px 0;
+        font-size: 2rem;
+    }
+    .anchor{
+        width: 4%;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    #toTop{
+        width: 50%;
+        margin: auto;
+        padding: 2px 4px;
+        background: #ffffff;
+        border: 1px solid #dedede;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #toTop>img{
+        width: 100%;
+        cursor:pointer;
+    }
+    #words{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 2px 4px;
+        background: #000000;
+        border: 1px solid #333333;
+        border-radius: 5%;
+        opacity: 0;
+        transition: all .5s;
+    }
+    #words>img{
+        width: 100%;
+        cursor:pointer;
+    }
+
+}
+@media screen and (max-width:767px){
+    .bannerBox>.banner>.bannerBtn{
+        display: none;
+    }
+}
